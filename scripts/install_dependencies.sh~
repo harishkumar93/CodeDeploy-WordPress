@@ -1,3 +1,0 @@
-#!/bin/bash
-sudo yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
-sudo yum install -y php-mysql

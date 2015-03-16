@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/WordPress
+    destination: /var/www/html/WordPress/Harish
 permissions:
-   - object: /var/www/html/WordPress
+   - object: /var/www/html/WordPress/Harish/index1.php
      pattern: "**"
      owner: apache
      group: apache
@@ -12,10 +12,6 @@ permissions:
      type:
        - file
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 300
-      runas: root
   AfterInstall:
     - location: scripts/change_permissions.sh
       timeout: 300
